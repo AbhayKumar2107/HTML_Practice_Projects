@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Form with Attributes</title>
+</head>
+
+<body>
+  <h1>Please Enter your Details</h1>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" placeholder="Abhay"><br>
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" placeholder="Patel"><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="abhaypatel.example.com"><br>
+      <label for="age">Age:</label>
+      <input type="number" name="age" placeholder="22"><br>
+      <label for="gender">Gender:</label>
+      <select name="gender" id="Gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Interests</legend>
+      <input type="checkbox" name="music">
+      <label for="music">Music</label>
+      <input type="checkbox" name="sport">
+      <label for="sport">Sport</label>
+      <input type="checkbox" name="racing">
+      <label for="racing">Racing</label>
+    </fieldset>
+    <fieldset>
+      <legend>Location</legend>
+      <label for="country">Country</label>
+      <select name="country" id="Country">
+        <option value="india">India</option>
+        <option value="unitedstates">United States</option>
+        <option value="russia">Russia</option>
+        <option value="japan">Japan</option>
+      </select><br>
+      <label for="city">City</label>
+      <select name="city" id="City">
+        <option value="moscow">Moscow</option>
+        <option value="delhi">Delhi</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="newyork">New York</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Information</legend>
+      <label for="comment">Comment:</label>
+      <textarea name="comment" id="Comment">Your comment goes here</textarea><br>
+      <label for="profilepicture">Profile Picture</label>
+      <input type="file" name="profilepicture">
+    </fieldset>
+    <fieldset>
+      <legend>Submit option</legend>
+      <label for="submitmethod">Preferred Submit Method:</label>
+      <input type="radio" name="submitmethod" checked>
+      <label for="submitmethod">Online</label>
+      <input type="radio" name="submitmethod">
+      <label for="submitmethod">Offline</label><br>
+      <label for="newsletter">Subscribe To Newsletter</label>
+      <input type="checkbox" name="newsletter" checked>
+    </fieldset>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+
+</html>
